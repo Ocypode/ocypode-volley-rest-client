@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">ocypode-volley-rest-client</string>
+    
+    <string name="generic_server_down">Service Unavailable</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="generic_error">Application error</string>
+
+</resources>
