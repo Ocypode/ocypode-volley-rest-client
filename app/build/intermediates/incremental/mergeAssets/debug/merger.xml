@@ -2,10 +2,10 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/src/main/assets" />
+        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/src/debug/assets" />
+        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/src/debug/assets" />
     </dataSet>
 
 </merger>

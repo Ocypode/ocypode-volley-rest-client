@@ -2,11 +2,11 @@
 <metadata>
   <groupId>com.ocypode.restclient</groupId>
   <artifactId>ocypode-restclient-lib</artifactId>
-  <version>0.2.0</version>
+  <version>0.1.0</version>
   <versioning>
     <versions>
-      <version>0.2.0</version>
+      <version>0.1.0</version>
     </versions>
-    <lastUpdated>20140918151746</lastUpdated>
+    <lastUpdated>20140918173955</lastUpdated>
   </versioning>
 </metadata>

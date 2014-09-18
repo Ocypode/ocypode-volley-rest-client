@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ocypode.restclient</groupId>
   <artifactId>ocypode-restclient-lib</artifactId>
-  <version>0.2.0</version>
+  <version>0.1.0</version>
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
       <groupId>com.android.support</groupId>
       <artifactId>support-v4</artifactId>
-      <version>+</version>
+      <version>21.0.0-rc1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

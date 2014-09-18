@@ -2,12 +2,12 @@
 <merger version="2" >
 
     <dataSet config="21.0.0-rc1" >
-        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0-rc1/res" />
+        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0-rc1/res" />
     </dataSet>
     <dataSet config="main" >
-        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/src/main/res" >
+        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/src/main/res" >
             <file
-                path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/src/main/res/values/strings.xml"
+                path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="http_error_304" >Not Modified
                 </string>
@@ -37,11 +37,11 @@
                 </string>
             </file>
         </source>
-        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/build/generated/res/rs/release" />
-        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/build/generated/res/generated/release" />
+        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/build/generated/res/rs/release" />
+        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/build/generated/res/generated/release" />
     </dataSet>
     <dataSet config="release" >
-        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client2/app/src/release/res" />
+        <source path="/Users/macksuel/Repositorio SookApp/Ocypode-Volley-Rest-Client/app/src/release/res" />
     </dataSet>
 
 </merger>
