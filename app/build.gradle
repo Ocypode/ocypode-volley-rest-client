@@ -1,13 +1,13 @@
 apply plugin: 'android-library'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
         applicationId "com.ocypode.volley"
         minSdkVersion 8
-        targetSdkVersion 20
+        targetSdkVersion 19
 
         testApplicationId "com.ocypode.volley.test"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
@@ -22,8 +22,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:21.0.0-rc1'
-
+    compile 'com.android.support:support-v4:19.0.1'
     compile 'com.google.code.gson:gson:2.2.4'
     compile files('libs/guice-3.0-no_aop.jar')
     compile files('libs/javax.inject-1.jar')
@@ -34,7 +33,7 @@ dependencies {
 
 apply plugin: 'maven'
 
-version = '0.1.0'
+version = '0.2.0'
 group = 'com.ocypode.restclient'
 
 repoDir = 'file://' + rootProject.projectDir + '/repo/'
