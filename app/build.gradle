@@ -33,7 +33,7 @@ dependencies {
 
 apply plugin: 'maven'
 
-version = '0.3.0'
+version = '0.3.1'
 group = 'com.ocypode.restclient'
 
 repoDir = 'file://' + rootProject.projectDir + '/repo/'
