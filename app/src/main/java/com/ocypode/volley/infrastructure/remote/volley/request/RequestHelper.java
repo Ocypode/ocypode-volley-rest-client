@@ -1,10 +1,5 @@
 package com.ocypode.volley.infrastructure.remote.volley.request;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.json.JSONException;
-
 import com.android.volley.Cache;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.NetworkResponse;
@@ -14,6 +9,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.ocypode.volley.infrastructure.remote.handler.Handler;
+
+import org.json.JSONException;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RequestHelper {
 
@@ -96,6 +96,10 @@ public class RequestHelper {
 	}
 
 	public static Map<String, String> getHeaders() {
-		return new HashMap<String, String>();
+        HashMap headers = new HashMap<String, String>();
+
+        headers.put("Referer", "local.dev");
+
+        return headers;
 	}
 }
