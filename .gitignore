@@ -23,6 +23,8 @@ local.properties
 proguard/
 
 # Android Studio
+.settings/
+.gradle/
 .idea/
 .gradle
 /*/local.properties
