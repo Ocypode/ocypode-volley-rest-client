@@ -41,3 +41,4 @@ proguard/
 */local.properties
 */out
 build/*
+com_crashlytics_export_strings.xml

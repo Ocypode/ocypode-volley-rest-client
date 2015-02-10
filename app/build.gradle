@@ -1,48 +1,27 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.ocypode.volley"
-        minSdkVersion 16
-        targetSdkVersion 19
-
-        testApplicationId "com.ocypode.volley.test"
-        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        applicationId "com.ocypode.volleyrestclient"
+        minSdkVersion 8
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
     }
-
     buildTypes {
         release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.0.1'
-    compile 'com.google.code.gson:gson:2.2.4'
-    compile files('libs/guice-3.0-no_aop.jar')
-    compile files('libs/javax.inject-1.jar')
-    compile files('libs/jsr305-1.3.9.jar')
-    compile files('libs/roboguice-2.0.jar')
-    compile files('libs/volley.jar')
-}
-
-apply plugin: 'maven'
-
-version = '0.3.1'
-group = 'com.ocypode.restclient'
-
-repoDir = 'file://' + rootProject.projectDir + '/repo/'
-
-uploadArchives {
-    repositories.mavenDeployer {
-        repository(url: repoDir)
-        pom {
-            artifactId = 'ocypode-restclient-lib'
-        }
-    }
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.google.code.gson:gson:2.3.+'
+    compile 'com.google.inject:guice:4.0-beta5'
 }
