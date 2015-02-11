@@ -2,7 +2,6 @@ package com.ocypode.volleyrestclient.infrastructure.request;
 
 import java.io.File;
 
-import roboguice.inject.ContextSingleton;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -11,15 +10,16 @@ import android.support.v4.util.LruCache;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 import com.google.inject.Inject;
+import com.google.inject.Singleton;
 import com.ocypode.volleyrestclient.infrastructure.cache.BufferedDiskBasedCache;
 import com.ocypode.volleyrestclient.utility.bitmap.BitmapUtil;
 
 /**
  * If we start having performance problems: http://stackoverflow.com/questions/20916478/performance-issue-with-volleys-diskbasedcache
- * This class is @ContextSingleton, be aware when you use {@link newImageLoaderInMemory}
+ * This class is @Singleton, be aware when you use {@link newImageLoaderInMemory}
  * @author jairobjunior@gmail.com
  */
-@ContextSingleton
+@Singleton
 public class ImageLoaderVolley {
 
 	/** Default maximum disk usage in bytes. 10MB */
