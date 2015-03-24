@@ -5,12 +5,12 @@ repositories {
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 21
+        targetSdkVersion 22
     }
 }
 
@@ -19,12 +19,12 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'com.mcxiaoke.volley:library:1.0.15'
     compile 'com.google.inject:guice:4.0-beta5'
-    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:support-v4:22.0.0'
 }
 
 apply plugin: 'maven'
 
-version = '1.0.1'
+version = '1.0.2'
 group = 'com.ocypode'
 
 uploadArchives {
