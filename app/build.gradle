@@ -1,15 +1,12 @@
-apply plugin: 'com.android.application'
+apply plugin: 'android-library'
 
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.ocypode.volleyrestclient"
         minSdkVersion 8
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
     }
     buildTypes {
         release {
@@ -30,13 +27,13 @@ dependencies {
 apply plugin: 'maven'
 
 version = '1.0.0'
-group = 'com.ocypode.volleyrestclient'
+group = 'com.ocypode'
 
 uploadArchives {
     repositories.mavenDeployer {
         repository(url: 'file://' + rootProject.projectDir + '/repo/')
         pom {
-            artifactId = 'volleyrestclient-lib'
+            artifactId = 'ocypode-volleyrestclient-lib'
         }
     }
 }
