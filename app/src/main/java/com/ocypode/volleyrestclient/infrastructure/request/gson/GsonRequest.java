@@ -51,7 +51,7 @@ public class GsonRequest<T> extends Request<T> {
 				RequestHelper.createErrorResponseListener(handler));
 	}
 
-	private GsonRequest(int method, String url, Class<T> clazz, JSONObject jsonObject,
+	public GsonRequest(int method, String url, Class<T> clazz, JSONObject jsonObject,
 			Map<String, String> headers, Listener<T> listener,
 			ErrorListener errorListener) {
 		super(method, url, errorListener);
