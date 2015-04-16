@@ -95,11 +95,15 @@ public class RequestHelper {
 	    return entry;
 	}
 
-	public static Map<String, String> getHeaders() {
+    public static Map<String, String> getHeaders() {
         HashMap headers = new HashMap<String, String>();
 
-        headers.put("Referer", "local.dev");
-
         return headers;
-	}
+    }
+
+    public static Map<String, String> getParams() {
+        Map<String, String> pars = new HashMap<>();
+
+        return pars;
+    }
 }
